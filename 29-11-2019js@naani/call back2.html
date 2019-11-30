@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Call Back Function for addition of 2 numbers</title>
+</head>
+<body>
+
+</body>
+<script>
+	function add(a,b,callback){
+		document.write(`The sum of ${a} and ${b} is ${a+b}`);
+		callback();
+	}
+	function disp(){
+		document.write('This After add')
+	}
+	add(5,6,disp);
+</script>
+</html>
